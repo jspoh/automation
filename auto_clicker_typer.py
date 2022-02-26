@@ -1,4 +1,4 @@
-# auto typing + auto clicking bot. can help with filling up forms that require eg. email addresses etc
+# auto typing bot. can help with filling up forms that require eg. email addresses etc
 
 import keyboard
 import mouse
@@ -56,7 +56,7 @@ Enter '0' for instant, '1' for 1x, '2' for 2x etc..
     def auto_click():
         print('''
 Press [arrow down] to start/stop clicking the left mouse button.
-This program does ~30 clicks per second
+This program does ~55 clicks per second
 ''')
         #cps = float(input("Clicks per second: "))
         autoclick = True
@@ -68,7 +68,7 @@ This program does ~30 clicks per second
                 aclick_running = True
                 while aclick_running:
                     mouse.click("left")
-                    time.sleep(0.02)  # ~30cps
+                    time.sleep(0.014)  # ~55cps
                     if keyboard.is_pressed(start_stop_key):
                         print("Autoclick stopped!")
                         aclick_running = False

@@ -1,4 +1,4 @@
-# auto typing bot. can help with filling up forms that require eg. email addresses etc
+# auto typing/clicking bot. can help with filling up forms that require e.g. email addresses etc
 
 import keyboard
 import mouse
@@ -68,12 +68,13 @@ This program does ~55 clicks per second
                 aclick_running = True
                 while aclick_running:
                     mouse.click("left")
-                    time.sleep(0.014)  # ~55cps
+                    time.sleep(0.014)  # ~55cps, feel free to delete this line if your computer can handle insane speeds
                     if keyboard.is_pressed(start_stop_key):
                         print("Autoclick stopped!")
                         aclick_running = False
                         time.sleep(0.5)
-
+            elif keyboard.is_pressed("q"):
+                intro_text()
 
 
     def test():
@@ -83,14 +84,14 @@ This program does ~55 clicks per second
                 time.sleep(0.5)
 
 
-
     def intro_text():
         func = input('''
 Which function would you like to use?
         
 1. AutoTyper
 2. AutoTyper v2
-3. Auto clicker
+3. AutoClicker
+4. AutoClicker v2
 
 Hotkey to start/stop is [arrow down]
 Alternatively, enter 'Q' to quit program.

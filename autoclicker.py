@@ -34,4 +34,4 @@ while running:
                 print("autoclick stopped!")
                 time.sleep(0.5)
     elif keyboard.is_pressed("f7"):
-        sys.exit("Program terminated")
+        sys.exit()

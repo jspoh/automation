@@ -28,7 +28,7 @@ while running:
         print("autoclick started!")
         mouse_click = True
         while mouse_click:
-            pyautogui.click(button='left')
+            pyautogui.click(button='left')  # feel free to change this to doubleClick/tripleClick if your application can handle it
             if keyboard.is_pressed(start_stop_key):
                 mouse_click = False
                 print("autoclick stopped!")

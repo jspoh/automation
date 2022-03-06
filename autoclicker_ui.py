@@ -1,5 +1,5 @@
 # autoclicker with pyautogui instead of mouse
-# made a gui for this but starting with hotkey is broken now :(
+# made a gui for this but some hotkey stuff is broken now :/
 # everything else seems to work fine though, can't really test stop button though
 # program crashes when it starts clicking on the window
 
